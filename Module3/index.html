@@ -1,23 +1,80 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-    <title>Exercise - 1 AYAN JAIN 24BCE0789</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+        }
+        
+        .label {
+            background-color: lightblue;
+            text-align: right;
+        }
+    </style>
 </head>
-<style>
-    #embpara {
-        font-family: 'times new roman';
-        font-size: 20px;
-        font-weight: bold;
-        color: green
-    }
-</style>
 
 <body>
-    <p style="font-family:'times new roman';font-size:20px;font-weight:bold;color:green">Hello World</p>
-    <p id="embpara">Hello World</p>
-    <p class="para">Hello World</p>
+
+<h2>Registration Form</h2>
+
+<form>
+    <table>
+        <tr>
+            <td class="label"><label for="name">Name:</label></td>
+            <td><input type="text" name="name" id="name"></td>
+        </tr>
+
+        <tr>
+            <td class="label">Class:</td>
+            <td>
+                <select name="class">
+                    <option>I</option>
+                    <option>II</option>
+                    <option>III</option>
+                    <option>IV</option>
+                </select>
+                Year
+            </td>
+        </tr>
+
+        <tr>
+            <td class="label">Qualification:</td>
+            <td>
+                <select name="qualification">
+                    <option>B.Tech</option>
+                    <option>M.Tech</option>
+                    <option>MCA</option>
+                    <option>B.Sc</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="label">Email ID:</td>
+            <td><input type="email" name="email"></td>
+        </tr>
+
+        <tr>
+            <td class="label">Address:</td>
+            <td><textarea name="address"></textarea></td>
+        </tr>
+
+        <tr>
+            <td class="label">Upload Photo:</td>
+            <td><input type="file" name="photo"></td>
+        </tr>
+
+        <tr>
+            <td class="label"></td>
+            <td class="buttons">
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear">
+            </td>
+        </tr>
+    </table>
+</form>
+
 </body>
-
-
 </html>
