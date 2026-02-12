@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>24BCE0789_LA3_JS_AYAN_JAIN</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body onload="initPage()">
+    <div class="reg-box" onmouseover="mOverEffect(this)" onmouseout="mOutEffect(this)">
+        <h2>Registrations close on 23rd Feb 2026</h2>
+        <div id="timer-display">Loading timer...</div>
+        
+        <form name="regForm" id="regForm" onsubmit="return validateForm(event)">
+            <input type="text" name="user" id="user" placeholder="Full Name" onchange="logChange()">
+            <input type="text" name="email" id="email" placeholder="Email Address">
+            <div class="actions">
+                <button type="submit" class="sub-btn">Submit Registration</button>
+                <button type="button" class="res-btn" onclick="clearForm()">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="reg-box" onmouseover="mOverEffect(this)" onmouseout="mOutEffect(this)">
+        <h2>Suggestions</h2>
+        <div id="suggestion-list">No suggestions yet.</div>
+        <input type="text" id="user-suggest" placeholder="Enter suggestion and press Enter..." onkeypress="handleEnter(event)">
+        <button type="button" class="sub-btn" style="width: 100%; margin-top: 10px;" onclick="addSuggestion()">Post Suggestion</button>
+        <a href="index.html" class="home-link">Back to Home</a>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>
